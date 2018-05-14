@@ -17,28 +17,118 @@
     <!--Website header containing the title and top nav links (and side on mobile)-->
     <nav class="white" role="navigation">
       <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">Inventors Enterprise</a>
-        <!--Might Get rid of this, it shifts the whole top bar over-->
+        <a id="logo-container" href="./index.html" class="hide-on-small-only brand-logo">Inventors Enterprise</a>
+				<a id="logo-container" href="./index.html" class="hide-on-med-and-up brand-logo">IE</a>
+				<!--Might Get rid of this, it shifts the whole top bar over-->
         <ul class="right hide-on-med-and-down">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./meetings.html">Meetings</a></li>
           <li><a href="./projects.html">Projects</a></li>
-          <li><a href="./about_us.html">About Us</a></li>
+          <li><a href="./contact_us.html">Contact Us</a></li>
         </ul>
         <!--Above will disappear on mobile, this adds a side navigation in for the same link-->
         <ul id="nav-mobile" class="sidenav">
           <li><a class="waves-effect waves-purple" href="./index.html">Home</a></li>
           <li><a class="waves-effect waves-purple" href="./meetings.html">Meetings</a></li>
           <li><a class="waves-effect waves-purple" href="./projects.html">Projects</a></li>
-          <li><a class="waves-effect waves-purple" href="./about_us.html">About Us</a></li>
+          <li><a class="waves-effect waves-purple" href="./contact_us.html">Contact Us</a></li>
         </ul>
         <!--Have that side logo thing menu bar-->
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       </div>
     </nav>
+		<main>
+			<!--Main content-->
+			<div class="slider">
+				<ul class="slides">
+					<li>
+						<img class="responsive-img" src="images/non-trans-hweekend.png">
+					</li>
+					<li>
+						<img src="images/hweekend_breakfast_machine.jpg">
+					</li>
+					<li>
+						<img src="images/hweekend-pcb-noah.jpg">
+					</li>
+				</ul>
+			</div>
 
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
+			<div class="container center">
+				<div class="header center"><h2 class="light">HWeekend</h2></div>
+			</div>
+
+			<div class="container">
+				<div class="section">
+
+					<!--   Icon Section   -->
+					<div class="row">
+						<div class="col s12 m4">
+							<div class="icon-block">
+								<h2 class="center brown-text"><i class="material-icons">schedule</i></h2>
+								<h5 class="center">When</h5>
+
+								<p class="light">Hweekend happens once per term. We don't currently have a date for fall term,
+									but be on the lookout and we'll have the date here as fall term approaches!</p>
+							</div>
+						</div>
+
+						<div class="col s12 m4">
+							<div class="icon-block">
+								<h2 class="center brown-text"><i class="material-icons">room</i></h2>
+								<h5 class="center">Where</h5>
+
+								<p class="light">Every hweekend is held inside kelly in the 100x area.
+									We also have access to the makerspace in the bottom of Buxton hall.</p>
+							</div>
+						</div>
+
+						<div class="col s12 m4">
+							<div class="icon-block">
+								<h2 class="center brown-text"><i class="material-icons">insert_emoticon</i></h2>
+								<h5 class="center">Why</h5>
+
+								<p class="light">To have fun, enjoy community, make, and learn! No skills are required.
+									We bring in mentors from industry and the community to help any and all fullfill their
+									vision as best they can!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="carousel">
+				<a class="carousel-item" href="#one!"><img src="images/me.jpg"></a>
+				<a class="carousel-item" href="#two!"><img src="images/john_open_forum.jpg"></a>
+				<a class="carousel-item" href="#three!"><img src="images/pitch_comp.jpg"></a>
+				<a class="carousel-item" href="#four!"><img src="images/winter-trees-snow.jpg"></a>
+				<a class="carousel-item" href="#five!"><img src="images/upLift.jpg"></a>
+			</div>
+
+
+
+		</main>
+		<footer class="light-blue page-footer">
+			<div class="footer-copyright">
+				<div class="container">
+				Made by <a class="black-text text-lighten-3" href="#!">Inventors Enterprise</a>
+				</div>
+			</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="js/materialize.js"></script>
+		<script src="js/init.js"></script>
+		<script>
+		$(document).ready(function(){
+			var indicators = false;
+			$('.slider').slider({
+				full_width: true,
+				interval: 3000,
+				transition: 700,
+			});
+			$('.carousel').carousel();
+		});
+		</script>
+
   </body>
 </html>

@@ -2161,9 +2161,16 @@ html {
 /**
  * Remove the margin in all browsers (opinionated).
  */
-body {
+/*body {
   margin: 0;
+}*/
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	margin:0;
 }
+
 
 /**
  * Add the correct display in IE 9-.
@@ -2197,6 +2204,7 @@ figure,
 main {
   /* 1 */
   display: block;
+	flex: 1 0 auto;
 }
 
 /**

@@ -18,57 +18,41 @@
       <!--Website header containing the title and top nav links (and side on mobile)-->
       <nav class="white" role="navigation">
         <div class="nav-wrapper container">
-          <a id="logo-container" href="#" class="brand-logo">Inventors Enterprise</a>
-          <!--Might Get rid of this, it shifts the whole top bar over-->
+          <a id="logo-container" href="#" class="hide-on-small-only	brand-logo">Inventors Enterprise</a>
+					<a id="logo-container" href="./index.html" class="hide-on-med-and-up brand-logo">IE</a>
+					<!--Might Get rid of this, it shifts the whole top bar over-->
           <ul class="right hide-on-med-and-down">
             <li><a href="./meetings.html">Meetings</a></li>
             <li><a href="./projects.html">Projects</a></li>
             <li><a href="./hweekend.html">HWeekend</a></li>
-            <li><a href="./about_us.html">About Us</a></li>
+            <li><a href="./contact_us.html">Contact Us</a></li>
           </ul>
           <!--Above will disappear on mobile, this adds a side navigation in for the same link-->
           <ul id="nav-mobile" class="sidenav">
             <li><a class="waves-effect waves-purple" href="./meetings.html">Meetings</a></li>
             <li><a class="waves-effect waves-purple" href="./projects.html">Projects</a></li>
             <li><a class="waves-effect waves-purple" href="./hweekend.html">HWeekend</a></li>
-            <li><a class="waves-effect waves-purple" href="./about_us.html">About Us</a></li>
+            <li><a class="waves-effect waves-purple" href="./contact_us.html">Contact Us</a></li>
           </ul>
           <!--Have that side logo thing menu bar-->
           <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
       </nav>
-
+<main>
+	<!--Page Content-->
 <!--This is the top image section, parallax is what makes that cool effect-->
-      <div id="index-banner" class="parallax-container">
-        <div class="section no-pad-bot">
-          <div class="container">
-            <br><br>
-            <!--<h1 class="header center grey-text">Inventing</h1>
-          <div class="row center">
-            <a href="#" id="start-button" class="btn-large waves-effect waves-light grey">Get Started</a>
-          </div>-->
-          <br><br>
-
-        </div>
-      </div>
-      <div class="parallax"><img src="images/IE_logo6.jpg" alt="Inventors Enterprise"></div>
-    </div>
-
-<div class="container">
-  <div class="section">
-    <div class="row">
-      <div class="container">
-        <div class="col m2 s2">
-        </div>
-        <div id="slogan" class="col m8 s8">
-          <h3 class="center light">Where Inventors are Invented</h3>
-        </div>
-        <div class="col m2 s2">
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="slider">
+	<ul class="slides">
+		<li>
+			<img src="images/IE_logo.jpg"> <!-- random image -->
+		</li>
+		<li>
+			<img src="images/IE_slogan.png"> <!-- random image -->
+		</li>
+	</ul>
 </div>
+<br>
+
 <!--second picture text-->
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
@@ -121,19 +105,23 @@
 <div class="container">
   <div class="section">
     <div class="row">
-      <div class="col s4 m4 center">
-        <br><br>
-        <a href="./meetings.html" id="meetings-button" class="btn-large waves-effect waves-light orange lighten-1"> What are they like?</a>
-      </div>
+      <div class="col s12 m4 center">
+				<div class="icon-block">
+	        <br><br>
+	        <a href="./meetings.html" id="meetings-button" class="btn-large waves-effect waves-light orange lighten-1"> What are they like?</a>
+	      </div>
+			</div>
 
-      <div class="col s4 m4 center"
-      <h3><i class="mdi-content-send brown-text"></i></h3>
-      <h4>Meetings</h4>
-      <p class="center light">Meetings on Tuesdays at 6:00pm in Austin 270</p>
-    </div>
-
-    <div class="col s4 m4 center">
-      <br><br>
+      <div class="col s12 m4 center"
+			<div class="icon-block">
+					<h3><i class="mdi-content-send brown-text"></i></h3>
+		      <h4>Meetings</h4>
+		      <p class="center light">Meetings on Tuesdays at 6:00pm in Austin 270</p>
+	    </div>
+			</div>
+    <div class="col s12 m4 center">
+		<div class="icon-block">
+			<br><br>
       <!-- Button code -->
       <div title="Add to Calendar" class="btn-large light-blue lighten-2 addeventatc">
 
@@ -148,6 +136,7 @@
       </div>
     </div>
     </div>
+	</div>
   </div>
 </div>
 
@@ -155,11 +144,11 @@
   <div class="section no-pad-bot">
     <div class="container">
       <div class="row center">
-        <h3 class="header col s12 light">HWeekend</h5>
+        <h3 class="header col s12 light"></h5>
       </div>
     </div>
   </div>
-  <div class="parallax"><img src="images/circuits.jpg"></div>
+  <div class="parallax"><img src="images/non-trans-hweekend.png"></div>
 </div>
 
 
@@ -167,21 +156,30 @@
 <div class="container">
   <div class="section">
     <div class="row">
-      <div class="col s8 m8">
+      <div class="col s12 m8">
         <p class="right-align light">HWeekend is our tri-annual 30 hour event hosted by the Oregon State College of Electrical Engineering and Computer Science.
             This spring term had a great turnout with over 50 in attendance, not including mentors from HP, and projects ranging from automated plant growers to
              automated breakfast machines and PCB makers!</p>
       </div>
 
-      <div class="col s4 m4">
+      <div class="col s12 m4">
         <a href="./hweekend.html" class="black-text lighten-3"><h4>HWeekend</h4></a>
         <h5 class="left-align light">30 hours. Many Ideas. Much fun.</h5>
       </div>
     </div>
   </div>
 </div>
-
-
+</main>
+<footer class="light-blue page-footer">
+	<div class="footer-copyright">
+		<div class="container">
+		Made by <a class="black-text text-lighten-3" href="#!">Inventors Enterprise</a>
+		</div>
+	</div>
+</footer>
+			<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="js/materialize.js"></script>
+      <script src="js/init.js"></script>
       <!-- AddEvent script -->
       <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
       <!-- AddEvent Settings -->
@@ -195,9 +193,23 @@
               yahoo      : {show:true, text:"Yahoo <em>(online)</em>"}
           });
       };
+
+			/*document.addEventListener('DOMContentLoaded', function() {
+				var elems = document.querySelectorAll('.slider');
+				var instances = M.Slider.init(elems, options);
+
+			});*/
+
+			// Or with jQuery
+			$(document).ready(function(){
+				var indicators = false;
+				$('.slider').slider({
+					full_width: true,
+					interval: 5000,
+					transition: 1000,
+				});
+			});
       </script>
-      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script src="js/materialize.js"></script>
-      <script src="js/init.js"></script>
+
     </body>
   </html>
